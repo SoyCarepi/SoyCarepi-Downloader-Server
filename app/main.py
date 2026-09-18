@@ -129,8 +129,9 @@ async def download(url: str = Query(..., min_length=8)):
         headers={"Content-Disposition": "attachment; filename=\"video.mp4\""},
     )
     
-    @app.get("/")
+@app.get("/")
 def root():
-    return {"ok": True, "message": "SoyCarepi Downloader API funcionando"}
+    return {"ok": True, "message": 
+"SoyCarepi Downloader API funcionando"}
 
 
