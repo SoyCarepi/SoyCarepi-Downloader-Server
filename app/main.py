@@ -15,6 +15,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+
 SUPPORTED = {"tiktok", "instagram", "facebook", "youtube"}
 
 class ResolveRequest(BaseModel):
