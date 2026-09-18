@@ -128,3 +128,9 @@ async def download(url: str = Query(..., min_length=8)):
         media_type="application/octet-stream",
         headers={"Content-Disposition": "attachment; filename=\"video.mp4\""},
     )
+    
+    @app.get("/")
+def root():
+    return {"ok": True, "message": "SoyCarepi Downloader API funcionando"}
+
+
